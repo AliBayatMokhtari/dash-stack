@@ -1,7 +1,6 @@
 import useStyles from "./side-bar.styles";
 import paths from "../../router/paths";
-import clsx from "clsx";
-import { Link } from "react-router-dom";
+import SectionItem from "./section-item";
 
 const SideBar = () => {
   const cls = useStyles();
@@ -44,14 +43,8 @@ const SideBar = () => {
               </div>
             )}
             <div>
-              {items.map(({ path, title }, index) => (
-                <Link key={path} to={path} className={cls.link}>
-                  <div className={cls.itemContainer}>
-                    <div className={clsx(cls.item, index === 0 && cls.active)}>
-                      {title}
-                    </div>
-                  </div>
-                </Link>
+              {items.map(({ path, title }) => (
+                <SectionItem key={path} path={path} title={title} />
               ))}
             </div>
           </div>
