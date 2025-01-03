@@ -39,7 +39,9 @@ const SideBar = () => {
         {sections.map(({ items, title: sectionTitle }, index) => (
           <div key={index}>
             {sectionTitle && (
-              <div className={cls.sectionTitleContainer}>{sectionTitle}</div>
+              <div className={cls.sectionTitleContainer}>
+                <span className={cls.sectionTitle}>{sectionTitle}</span>
+              </div>
             )}
             <div>
               {items.map(({ path, title }, index) => (

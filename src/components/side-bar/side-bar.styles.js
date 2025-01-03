@@ -23,6 +23,10 @@ const useStyles = createUseStyles((theme) => ({
     paddingInline: "1.5rem",
     marginBlock: "1rem",
   },
+  sectionTitle: {
+    fontSize: "0.75rem",
+    color: "#202224",
+  },
   link: {
     textDecoration: "none",
     color: "inherit",

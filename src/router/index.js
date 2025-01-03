@@ -4,21 +4,28 @@ import Dashboard from "../pages/dashboard";
 import Home from "../pages/home";
 import paths from "./paths";
 
-const router = createHashRouter([
+const router = createHashRouter(
+  [
+    {
+      path: paths.index,
+      Component: Root,
+      children: [
+        {
+          index: true,
+          Component: Home,
+        },
+        {
+          path: paths.dashboard,
+          Component: Dashboard,
+        },
+      ],
+    },
+  ],
   {
-    path: paths.index,
-    Component: Root,
-    children: [
-      {
-        index: true,
-        Component: Home,
-      },
-      {
-        path: paths.dashboard,
-        Component: Dashboard,
-      },
-    ],
-  },
-]);
+    future: {
+      v7_relativeSplatPath: true,
+    },
+  }
+);
 
 export default router;
