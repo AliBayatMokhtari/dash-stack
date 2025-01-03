@@ -7,7 +7,7 @@ const useStyles = createUseStyles({
   },
   content: {
     flexGrow: 1,
-    background: "yellow",
+    padding: "1.875rem",
   },
 });
 
