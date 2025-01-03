@@ -7,6 +7,13 @@
 
 @font-face {
   font-family: Nunito-Sans;
+  src: url(fonts/NunitoSans-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Nunito-Sans;
   src: url(fonts/NunitoSans-SemiBold.ttf);
   font-weight: 600;
   font-style: normal;
@@ -15,7 +22,7 @@
 @font-face {
   font-family: Nunito-Sans;
   src: url(fonts/NunitoSans-Bold.ttf);
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
