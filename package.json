@@ -1,6 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
+  "homepage": "https://alibayatmokhtari.github.io/dash-stack",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
@@ -16,6 +17,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.2",
+    "gh-pages": "^6.3.0",
     "loader-utils": "3.2.1",
     "typescript": "5.7.2"
   },
@@ -23,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
