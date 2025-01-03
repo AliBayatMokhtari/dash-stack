@@ -25,7 +25,8 @@ const useStyles = createUseStyles((theme) => ({
   },
   sectionTitle: {
     fontSize: "0.75rem",
-    color: "#202224",
+    opacity: 0.6,
+    fontWeight: "bold",
   },
   link: {
     textDecoration: "none",
