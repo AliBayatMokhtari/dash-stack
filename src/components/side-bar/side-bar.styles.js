@@ -33,7 +33,7 @@ const useStyles = createUseStyles((theme) => ({
     cursor: "pointer",
   },
   item: {
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: "0.875rem",
     padding: "1rem",
     borderRadius: "0.375rem",

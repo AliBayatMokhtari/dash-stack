@@ -4,7 +4,7 @@
   "homepage": "https://alibayatmokhtari.github.io/dash-stack",
   "description": "",
   "keywords": [],
-  "main": "src/index.tsx",
+  "main": "src/index.js",
   "dependencies": {
     "clsx": "2.1.1",
     "react": "^18.3.1",
@@ -22,11 +22,12 @@
     "typescript": "5.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PUBLIC_URL='.' react-scripts start",
     "build": "react-scripts build",
+    "build-localhost": "PUBLIC_URL='.' react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
   "browserslist": [
