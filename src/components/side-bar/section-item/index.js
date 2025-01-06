@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import useStyles from "./section-item.styles";
 import { Link, matchPath, useLocation } from "react-router-dom";
+import useStyles from "./section-item.styles";
 
 const SectionItem = ({ path, title }) => {
   const cls = useStyles();

@@ -1,4 +1,4 @@
-import Page from "../../components/page-layout";
+import Page from "@/components/page-layout";
 
 const Dashboard = () => {
   return (

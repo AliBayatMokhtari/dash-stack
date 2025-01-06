@@ -1,7 +1,7 @@
+import IconButton from "@/components/common/icon-button";
+import NotificationBell from "@/components/notification-bell";
+import hamburgerMenuIcon from "@/assets/images/icons/hamburger-menu.png";
 import useStyles from "./app-bar.styles";
-import IconButton from "../common/icon-button";
-import hamburgerMenuIcon from "../../assets/images/icons/hamburger-menu.png";
-import NotificationBell from "../notification-bell";
 
 const AppBar = () => {
   const cls = useStyles();

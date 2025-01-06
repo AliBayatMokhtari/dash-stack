@@ -1,5 +1,5 @@
-import notificationBell from "../../assets/images/icons/notification-bell.png";
-import Badge from "../common/badge";
+import Badge from "@/components/common/badge";
+import notificationBell from "@/assets/images/icons/notification-bell.png";
 import useStyles from "./notification-bell.styles";
 
 const NotificationBell = ({ count }) => {
