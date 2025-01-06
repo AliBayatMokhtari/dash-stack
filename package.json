@@ -25,7 +25,7 @@
   "scripts": {
     "start": "PUBLIC_URL='.' craco start",
     "build": "craco build",
-    "build-localhost": "PUBLIC_URL='.' craco build",
+    "build:localhost": "PUBLIC_URL='.' craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject",
     "predeploy": "yarn run build",
