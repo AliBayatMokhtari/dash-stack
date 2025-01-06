@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@craco/craco": "^7.1.0",
     "@types/react": "18.3.1",
     "@types/react-dom": "18.2",
     "gh-pages": "^6.3.0",
@@ -22,11 +23,11 @@
     "typescript": "5.7.2"
   },
   "scripts": {
-    "start": "PUBLIC_URL='.' react-scripts start",
-    "build": "react-scripts build",
-    "build-localhost": "PUBLIC_URL='.' react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
+    "start": "PUBLIC_URL='.' craco start",
+    "build": "craco build",
+    "build-localhost": "PUBLIC_URL='.' craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },

@@ -1,6 +1,6 @@
-import useStyles from "./side-bar.styles";
-import paths from "../../router/paths";
+import paths from "@/router/paths";
 import SectionItem from "./section-item";
+import useStyles from "./side-bar.styles";
 
 const SideBar = () => {
   const cls = useStyles();

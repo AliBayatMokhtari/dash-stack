@@ -1,6 +1,6 @@
-import ThemeProvider from "../providers/theme-provider";
-import GlobalStyles from "../providers/global-styles";
-import App from "../../App";
+import ThemeProvider from "@/components/providers/theme-provider";
+import GlobalStyles from "@/components/providers/global-styles";
+import App from "@/App";
 
 const Root = () => {
   return (

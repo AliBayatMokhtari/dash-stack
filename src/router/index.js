@@ -1,5 +1,5 @@
 import { createHashRouter } from "react-router-dom";
-import Root from "../components/root";
+import Root from "@/components/root";
 import paths from "./paths";
 
 // NOTE: All pages should be default exported
@@ -18,11 +18,11 @@ const router = createHashRouter(
       children: [
         {
           index: true,
-          lazy: lazyRoute(() => import("../pages/home")),
+          lazy: lazyRoute(() => import("@/pages/home")),
         },
         {
           path: paths.dashboard,
-          lazy: lazyRoute(() => import("../pages/dashboard")),
+          lazy: lazyRoute(() => import("@/pages/dashboard")),
         },
       ],
     },

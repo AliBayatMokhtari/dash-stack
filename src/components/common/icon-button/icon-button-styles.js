@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { hexWithOpacity } from "../../../utils/color";
+import { hexWithOpacity } from "@/utils/color";
 
 const useStyles = createUseStyles((theme) => ({
   container: {
