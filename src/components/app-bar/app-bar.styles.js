@@ -29,7 +29,6 @@ const useStyles = createUseStyles((theme) => ({
     "&::placeholder": {
       color: theme.colorPalette.black,
       opacity: 0.5,
-      fontFamily: "nunito-sans",
     },
   },
 }));

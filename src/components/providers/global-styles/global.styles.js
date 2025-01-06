@@ -47,6 +47,12 @@ const useGlobalStyles = createUseStyles((theme) => ({
       height: "100vh",
       overflow: "hidden",
     },
+    input: {
+      fontFamily: "nunito-sans",
+      "&::placeholder": {
+        fontFamily: "nunito-sans",
+      },
+    },
   },
 }));
 
