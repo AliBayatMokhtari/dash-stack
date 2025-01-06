@@ -5,20 +5,27 @@ const useStyles = createUseStyles((theme) => ({
     height: "100%",
     maxWidth: "240px",
     width: "100%",
-    paddingTop: "1.5rem",
     backgroundColor: theme.colorPalette.white,
+    display: "flex",
+    flexDirection: "column",
   },
   brandContainer: {
-    textAlign: "center",
     fontSize: "1.25rem",
     fontWeight: 800,
+    height: "4.375rem",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
   dash: {
     color: theme.colorPalette.primary,
   },
-  sectionContainer: {
-    paddingTop: "1.875rem",
+  sectionsContainer: {
+    paddingTop: "0.6875rem",
+    borderRight: `1px solid ${theme.colorPalette.divider}`,
+    flexGrow: 1,
   },
+  section: {},
   sectionTitleContainer: {
     paddingInline: "1.5rem",
     marginBlock: "1rem",

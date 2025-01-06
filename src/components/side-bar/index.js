@@ -34,9 +34,9 @@ const SideBar = () => {
         <span className={cls.dash}>Dash</span>
         <span>Stack</span>
       </div>
-      <div className={cls.sectionContainer}>
+      <div className={cls.sectionsContainer}>
         {sections.map(({ items, title: sectionTitle }, index) => (
-          <div key={index}>
+          <div key={index} className={cls.section}>
             {sectionTitle && (
               <div className={cls.sectionTitleContainer}>
                 <span className={cls.sectionTitle}>{sectionTitle}</span>

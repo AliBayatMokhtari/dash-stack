@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import SideBar from "../side-bar";
 import useStyles from "./layout.styles";
+import AppBar from "../app-bar";
 
 const Layout = () => {
   const cls = useStyles();
@@ -8,8 +9,11 @@ const Layout = () => {
   return (
     <div className={cls.container}>
       <SideBar />
-      <div className={cls.content}>
-        <Outlet />
+      <div className={cls.contentContainer}>
+        <AppBar />
+        <div className={cls.content}>
+          <Outlet />
+        </div>
       </div>
     </div>
   );

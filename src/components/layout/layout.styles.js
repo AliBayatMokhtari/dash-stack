@@ -5,9 +5,14 @@ const useStyles = createUseStyles({
     height: "100%",
     display: "flex",
   },
-  content: {
+  contentContainer: {
     flexGrow: 1,
+    display: "flex",
+    flexDirection: "column",
+  },
+  content: {
     padding: "1.875rem",
+    flexGrow: 1,
   },
 });
 
