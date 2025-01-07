@@ -15,7 +15,10 @@ const paths = Object.freeze({
   team: "/team",
   table: "/table",
   settings: "/settings",
-  auth: "/auth",
+  auth: {
+    index: "/auth",
+    signIn: "sign-in",
+  },
 });
 
 export default paths;
