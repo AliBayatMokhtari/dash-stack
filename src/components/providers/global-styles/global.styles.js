@@ -1,34 +1,39 @@
 import { createUseStyles } from "react-jss";
+import regularFont from "@/assets/fonts/nunito-sans-regular.ttf";
+import mediumFont from "@/assets/fonts/nunito-sans-medium.ttf";
+import semiBoldFont from "@/assets/fonts/nunito-sans-semi-bold.ttf";
+import boldFont from "@/assets/fonts/nunito-sans-bold.ttf";
+import extraBoldFont from "@/assets/fonts/nunito-sans-extra-bold.ttf";
 
 const useGlobalStyles = createUseStyles((theme) => ({
   "@font-face": [
     {
       fontFamily: "nunito-sans",
-      src: "url(/fonts/nunito-sans-regular.ttf) format('truetype')",
+      src: `url(${regularFont}) format('truetype')`,
       fontWeight: 400,
       fontStyle: "normal",
     },
     {
       fontFamily: "nunito-sans",
-      src: "url(/fonts/nunito-sans-medium.ttf) format('truetype')",
+      src: `url(${mediumFont}) format('truetype')`,
       fontWeight: 500,
       fontStyle: "normal",
     },
     {
       fontFamily: "nunito-sans",
-      src: "url(/fonts/nunito-sans-semi-bold.ttf) format('truetype')",
+      src: `url(${semiBoldFont}) format('truetype')`,
       fontWeight: 600,
       fontStyle: "normal",
     },
     {
       fontFamily: "nunito-sans",
-      src: "url(/fonts/nunito-sans-bold.ttf) format('truetype')",
+      src: `url(${boldFont}) format('truetype')`,
       fontWeight: 700,
       fontStyle: "normal",
     },
     {
       fontFamily: "nunito-sans",
-      src: "url(/fonts/nunito-sans-extra-bold.ttf) format('truetype')",
+      src: `url(${extraBoldFont}) format('truetype')`,
       fontWeight: 800,
       fontStyle: "normal",
     },
