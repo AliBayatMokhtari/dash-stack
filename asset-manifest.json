@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.js": "/dash-stack/static/js/main.14915938.js",
+    "main.js": "/dash-stack/static/js/main.b814640a.js",
     "static/js/71.c937d294.chunk.js": "/dash-stack/static/js/71.c937d294.chunk.js",
     "static/js/843.75f816ba.chunk.js": "/dash-stack/static/js/843.75f816ba.chunk.js",
+    "static/media/nunito-sans-extra-bold.ttf": "/dash-stack/static/media/nunito-sans-extra-bold.e62f6dbe2dbde08fb1ff.ttf",
+    "static/media/nunito-sans-medium.ttf": "/dash-stack/static/media/nunito-sans-medium.56938cd09e3a04e0972a.ttf",
+    "static/media/nunito-sans-regular.ttf": "/dash-stack/static/media/nunito-sans-regular.7a5b1e324beb1081259a.ttf",
+    "static/media/nunito-sans-semi-bold.ttf": "/dash-stack/static/media/nunito-sans-semi-bold.39af491f33e04d1f69b6.ttf",
     "static/media/nunito-sans-bold.ttf": "/dash-stack/static/media/nunito-sans-bold.e43c5a897c0189a89b62.ttf",
     "index.html": "/dash-stack/index.html",
-    "main.14915938.js.map": "/dash-stack/static/js/main.14915938.js.map",
+    "main.b814640a.js.map": "/dash-stack/static/js/main.b814640a.js.map",
     "71.c937d294.chunk.js.map": "/dash-stack/static/js/71.c937d294.chunk.js.map",
     "843.75f816ba.chunk.js.map": "/dash-stack/static/js/843.75f816ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.14915938.js"
+    "static/js/main.b814640a.js"
   ]
 }
