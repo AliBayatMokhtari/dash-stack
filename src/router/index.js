@@ -17,12 +17,22 @@ const router = createHashRouter(
       Component: Root,
       children: [
         {
-          index: true,
-          lazy: lazyRoute(() => import("@/pages/home")),
+          path: "/",
+          lazy: lazyRoute(() => import("@/components/layout")),
+          children: [
+            {
+              index: true,
+              lazy: lazyRoute(() => import("@/pages/home")),
+            },
+            {
+              path: paths.dashboard,
+              lazy: lazyRoute(() => import("@/pages/dashboard")),
+            },
+          ],
         },
         {
-          path: paths.dashboard,
-          lazy: lazyRoute(() => import("@/pages/dashboard")),
+          path: paths.auth,
+          lazy: lazyRoute(() => import("@/components/layout/auth")),
         },
       ],
     },
