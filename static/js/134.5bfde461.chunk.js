@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact=self.webpackChunkreact||[]).push([[134],{134:(e,t,c)=>{c.r(t),c.d(t,{default:()=>o});var a=c(216),n=c(972),r=c(861);const s=(0,n.MA)({container:{backgroundImage:"url(".concat(r,")"),height:"100%",backgroundSize:"cover",display:"flex",justifyContent:"center",alignItems:"center"}});var i=c(579);const o=()=>{const e=s();return(0,i.jsx)("div",{className:e.container,children:(0,i.jsx)(a.sv,{})})}},861:(e,t,c)=>{e.exports=c.p+"static/media/auth-background.f77588228964ce44d5f4.jpeg"}}]);
+//# sourceMappingURL=134.5bfde461.chunk.js.map
