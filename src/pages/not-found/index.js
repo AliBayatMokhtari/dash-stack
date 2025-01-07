@@ -12,7 +12,7 @@ const NotFound = () => {
         <img src={notFoundImage} className={cls.img} />
         <div className={cls.footer}>
           <h1 className={cls.header}>Looks like you’ve got lost</h1>
-          <Link to={paths.dashboard}>
+          <Link to={paths.dashboard} replace>
             <button className={cls.back}>Back to Dashboard</button>
           </Link>
         </div>
