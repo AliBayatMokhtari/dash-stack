@@ -62,19 +62,40 @@ const useStyles = createUseStyles((theme) => ({
     gap: "0.75rem",
     marginTop: "1.5rem",
   },
+  submitContainer: {
+    maxWidth: "26.125rem",
+    marginInline: "auto",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column",
+    gap: "1.125rem",
+  },
   submit: {
     backgroundColor: hexWithOpacity(theme.colorPalette.primary, 90),
     border: "none",
     outline: "none",
     borderRadius: "0.5rem",
-    maxWidth: "26.125rem",
     width: "100%",
-    marginInline: "auto",
     height: "3.5rem",
     fontWeight: "bold",
     fontSize: "1.25rem",
     color: theme.colorPalette.white,
     cursor: "pointer",
+  },
+  createAccount: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "0.375rem",
+    fontSize: "1.125rem",
+  },
+  dontHaveAccount: {
+    fontWeight: 600,
+    color: hexWithOpacity(theme.colorPalette.black, 65),
+  },
+  createOne: {
+    color: theme.colorPalette.link,
+    fontWeight: "bold",
   },
 }));
 

@@ -9,6 +9,7 @@ const theme = {
     accent: "#F93C65",
     success: "#00B69B",
     danger: "#F93C65",
+    link: "#5A8CFF",
   },
 };
 

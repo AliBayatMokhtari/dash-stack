@@ -18,6 +18,7 @@ const paths = Object.freeze({
   auth: {
     index: "/auth",
     signIn: "sign-in",
+    signUp: "sign-up",
   },
 });
 

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import useStyles from "./sign-in.styles";
+import paths from "@/router/paths";
 
 const SignInForm = () => {
   const cls = useStyles();
@@ -57,7 +59,18 @@ const SignInForm = () => {
         </div>
       </div>
 
-      <button className={cls.submit}>Sign In</button>
+      <div className={cls.submitContainer}>
+        <button className={cls.submit}>Sign In</button>
+        <div className={cls.createAccount}>
+          <span className={cls.dontHaveAccount}>Don’t have an account?</span>
+          <Link
+            to={`${paths.auth.index}/${paths.auth.signUp}`}
+            className={cls.createOne}
+          >
+            Create Account
+          </Link>
+        </div>
+      </div>
     </form>
   );
 };
