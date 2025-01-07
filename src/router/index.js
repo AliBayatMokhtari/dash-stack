@@ -47,6 +47,10 @@ const router = createHashRouter(
             },
           ],
         },
+        {
+          path: "*",
+          lazy: lazyRoute(() => import("@/pages/not-found")),
+        },
       ],
     },
   ],
