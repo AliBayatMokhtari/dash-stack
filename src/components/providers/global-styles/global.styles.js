@@ -39,6 +39,10 @@ const useGlobalStyles = createUseStyles((theme) => ({
     },
   ],
   "@global": {
+    "h1, h2, h3, h4, h5, h6, p": {
+      margin: 0,
+      padding: 0,
+    },
     body: {
       backgroundColor: theme.colorPalette.background,
       padding: 0,
@@ -47,6 +51,7 @@ const useGlobalStyles = createUseStyles((theme) => ({
       minHeight: "100vh",
       overflow: "hidden",
       fontFamily: "nunito-sans",
+      color: theme.colorPalette.black,
     },
     "#root": {
       height: "100vh",

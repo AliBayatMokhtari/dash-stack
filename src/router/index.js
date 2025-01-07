@@ -1,4 +1,4 @@
-import { createHashRouter } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 import Root from "@/components/root";
 import paths from "./paths";
 
@@ -9,6 +9,9 @@ const lazyRoute = (importFn) => async () => {
     Component: Page.default,
   };
 };
+
+// NOTE: could be moved to utils folder in later and more complex usages
+const replaceWith = (withPath) => () => <Navigate to={withPath} replace />;
 
 const router = createHashRouter(
   [
@@ -22,7 +25,7 @@ const router = createHashRouter(
           children: [
             {
               index: true,
-              lazy: lazyRoute(() => import("@/pages/home")),
+              Component: replaceWith(paths.dashboard),
             },
             {
               path: paths.dashboard,
@@ -31,8 +34,18 @@ const router = createHashRouter(
           ],
         },
         {
-          path: paths.auth,
+          path: paths.auth.index,
           lazy: lazyRoute(() => import("@/components/layout/auth")),
+          children: [
+            {
+              index: true,
+              Component: replaceWith(paths.auth.signIn),
+            },
+            {
+              path: paths.auth.signIn,
+              lazy: lazyRoute(() => import("@/pages/auth/sign-in")),
+            },
+          ],
         },
       ],
     },
