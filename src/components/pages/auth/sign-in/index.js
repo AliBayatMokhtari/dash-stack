@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useStyles from "./sign-in.styles";
 import paths from "@/router/paths";
 
 const SignInForm = () => {
   const cls = useStyles();
+  const navigate = useNavigate();
 
   function onSubmit(e) {
     e.preventDefault();
@@ -11,6 +12,10 @@ const SignInForm = () => {
     console.log(formData.get("email"));
     console.log(formData.get("password"));
     console.log(Boolean(formData.get("remember-password")));
+
+    localStorage.setItem("credentials", "data");
+
+    navigate(paths.index);
   }
 
   return (

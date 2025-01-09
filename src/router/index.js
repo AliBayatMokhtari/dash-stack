@@ -1,6 +1,9 @@
 import { createHashRouter, Navigate } from "react-router-dom";
 import Root from "@/components/root";
+import Layout from "@/components/layout";
+import AuthLayout from "@/components/layout/auth";
 import paths from "./paths";
+import withCredentials from "@/components/hoc/with-credentials";
 
 // NOTE: All pages should be default exported
 const lazyRoute = (importFn) => async () => {
@@ -21,7 +24,7 @@ const router = createHashRouter(
       children: [
         {
           path: "/",
-          lazy: lazyRoute(() => import("@/components/layout")),
+          Component: withCredentials(Layout),
           children: [
             {
               index: true,
