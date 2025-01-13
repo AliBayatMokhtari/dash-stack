@@ -17,6 +17,7 @@ const useStyles = createUseStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
+    marginTop: "1.875rem",
   },
 }));
 
