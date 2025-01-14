@@ -10,6 +10,8 @@ const theme = {
     success: "#00B69B",
     danger: "#F93C65",
     link: "#5A8CFF",
+    divider: "#D8D8D8",
+    darkGray: "#404040",
   },
 };
 
