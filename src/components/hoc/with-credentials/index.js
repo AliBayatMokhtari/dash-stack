@@ -1,13 +1,12 @@
 import paths from "@/router/paths";
-import { Navigate } from "react-router-dom";
+import { replaceWith } from "@/utils/router";
 
 const withCredentials = (Component) => {
   const WrapperComponent = () => {
     const credentials = localStorage.getItem("credentials");
+    const Comp = credentials ? Component : replaceWith(paths.auth.index);
 
-    if (!credentials) return <Navigate to={paths.auth.index} replace />;
-
-    return <Component />;
+    return <Comp />;
   };
 
   return WrapperComponent;

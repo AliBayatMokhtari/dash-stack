@@ -3,6 +3,7 @@ import Root from "@/components/root";
 import Layout from "@/components/layout";
 import paths from "./paths";
 import withCredentials from "@/components/hoc/with-credentials";
+import { replaceWith } from "@/utils/router";
 
 // NOTE: All pages should be default exported
 const lazyRoute = (importFn) => async () => {
@@ -11,9 +12,6 @@ const lazyRoute = (importFn) => async () => {
     Component: Page.default,
   };
 };
-
-// NOTE: could be moved to utils folder in later and more complex usages
-const replaceWith = (withPath) => () => <Navigate to={withPath} replace />;
 
 const router = createHashRouter(
   [
